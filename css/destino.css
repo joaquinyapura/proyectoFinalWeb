@@ -162,3 +162,19 @@ body {
 
 .item {
   padding: 0px 30px; }
+
+/* BUCLE EN SASS */
+h1 {
+  font: 2em; }
+
+h2 {
+  font: 1em; }
+
+h3 {
+  font: 0.66667em; }
+
+h4 {
+  font: 0.5em; }
+
+h5 {
+  font: 0.4em; }

@@ -196,3 +196,12 @@ body {
 .item {
     padding: 0px 30px;
 }
+
+
+/* BUCLE EN SASS */
+
+@for $variable from 1 to 6 {
+    h#{$variable} {
+        font: 2em/$variable;
+    }
+}
