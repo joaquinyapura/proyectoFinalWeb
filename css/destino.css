@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@media (max-width: 600px) {
+  .img1 {
+    display: none; }
+  .img2 {
+    display: none; }
+  .texto1 {
+    padding-top: 10px;
+    text-align: center; }
+  .texto2 {
+    padding-top: 10px;
+    text-align: center; }
+  .fondo {
+    display: none; }
+  .principal {
+    display: none; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Kumbh Sans', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: ghostwhite; }
+
+.nav-link {
+  color: #e85d04;
+  font-size: 1.3rem; }
+
+.imagenMenu {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+
+.fondo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100; }
+
+.textoMenu {
+  text-decoration: none;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  color: white;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-shadow: gray;
+  width: 100%; }
+
+.logoHeader {
+  width: 100px; }
+
+.contenedorIconos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; }
+
+.iconosContenido {
+  margin-top: 0px;
+  margin-right: 50px; }
+
+.animate__animated .animate__bounce {
+  --animate-delay: 0.9s; }
+
+.iconos {
+  color: white;
+  padding: 0 5px 0 5px;
+  font-size: 1.3rem; }
+
+.textoPrincipal {
+  font-weight: 700;
+  position: absolute;
+  color: white;
+  text-align: left;
+  font-size: 3rem;
+  margin-left: 50%;
+  margin-top: 20%;
+  text-shadow: 2px 2px 2px black; }
+
+.botonPrimario {
+  font-weight: 700;
+  padding: 20px 150px;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 27%;
+  background-image: linear-gradient(60deg, #e85d04, #dc2f02);
+  border-radius: 33px 0px 33px 0px; }
+
+.botonPrimario a {
+  color: white; }
+
+.botonPrimario :hover {
+  color: black; }
+
+.logo {
+  margin: 10px; }
+
+.section2 {
+  margin-top: 20px;
+  margin-left: 50px;
+  /* display: grid;
+    place-content: center;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "foto1 texto1"; */ }
+
+.section3 {
+  margin-top: 0%;
+  margin-left: 50px;
+  /*   display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "texto2 foto2";
+    place-content: center; */ }
+
+.texto1 {
+  word-wrap: break-word;
+  width: 300px;
+  padding-top: 200px;
+  margin-left: 200px; }
+
+.texto2 {
+  word-wrap: break-word;
+  text-align: right;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px; }
+
+.botonInfo {
+  background-image: linear-gradient(60deg, #e85d04, #dc2f02);
+  letter-spacing: 1px;
+  font-weight: 700; }
+
+.tarjetaOculta {
+  color: gray; }
+
+.botonInfo:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 51, 0, 0.76); }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black; }
+
+.logoFooter {
+  width: 150px;
+  height: 150px; }
+
+.item {
+  padding: 0px 30px; }
