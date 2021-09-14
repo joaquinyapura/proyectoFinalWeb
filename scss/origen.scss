@@ -1,27 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-@media (max-width: 600px) {
-    .img1 {
-        display: none;
-    }
-    .img2 {
-        display: none;
-    }
-    .texto1 {
-        padding-top: 10px;
-        text-align: center;
-    }
-    .texto2 {
-        padding-top: 10px;
-        text-align: center;
-    }
-    .fondo {
-        display: none;
-    }
-    .principal {
-        display: none;
-    }
-}
-
+$color-principal:#e85d04;
+$color-principal2:#dc2f02;
 * {
     margin: 0;
     padding: 0;
@@ -40,9 +19,18 @@ body {
     background-color: ghostwhite;
 }
 
-.nav-link {
-    color: #e85d04;
+.barra {
+    padding-top: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $color-principal;
+    padding: 0px 20px;
     font-size: 1.3rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $color-principal2;
 }
 
 .imagenMenu {
@@ -77,7 +65,8 @@ body {
 }
 
 .logoHeader {
-    width: 100px;
+    width: 130px;
+    margin-top: -40px;
 }
 
 .contenedorIconos {
@@ -91,8 +80,16 @@ body {
     margin-right: 50px;
 }
 
+.iconosContenido a i {
+    color: rgba($color: white, $alpha: 0.5)
+}
+
+.iconosContenido a i:hover {
+    color: rgba($color: white, $alpha: 1.0)
+}
+
 .animate__animated .animate__bounce {
-    --animate-delay: 0.9s;
+    --animate-delay: 1.0s;
 }
 
 .iconos {
@@ -113,13 +110,18 @@ body {
 }
 
 .botonPrimario {
+    color: white;
     font-weight: 700;
     padding: 20px 150px;
     text-align: center;
     margin-left: 30%;
-    margin-top: 27%;
+    margin-top: 30%;
     background-image: linear-gradient( 60deg, #e85d04, #dc2f02);
     border-radius: 33px 0px 33px 0px;
+}
+
+.botonPrimario :hover {
+    color: white;
 }
 
 .botonPrimario a {
@@ -132,24 +134,6 @@ body {
 
 .logo {
     margin: 10px;
-}
-
-.section2 {
-    margin-top: 20px;
-    margin-left: 50px;
-    /* display: grid;
-    place-content: center;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: "foto1 texto1"; */
-}
-
-.section3 {
-    margin-top: 0%;
-    margin-left: 50px;
-    /*   display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "texto2 foto2";
-    place-content: center; */
 }
 
 .texto1 {
@@ -168,7 +152,7 @@ body {
 }
 
 .botonInfo {
-    background-image: linear-gradient( 60deg, #e85d04, #dc2f02);
+    background-image: linear-gradient( 60deg, $color-principal, $color-principal2);
     letter-spacing: 1px;
     font-weight: 700;
 }
@@ -193,15 +177,41 @@ body {
     height: 150px;
 }
 
-.item {
-    padding: 0px 30px;
-}
-
 
 /* BUCLE EN SASS */
 
 @for $variable from 1 to 6 {
     h#{$variable} {
         font: 2em/$variable;
+    }
+}
+
+@media (max-width: 600px) {
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        display: none;
+    }
+    .texto1 {
+        word-wrap: break-word;
+        padding-top: 0px;
+        margin-left: 0px;
+    }
+    .texto2 {
+        word-wrap: break-word;
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .item-logo {
+        display: none;
+    }
+    .fondo {
+        display: none;
+    }
+    .principal {
+        display: none;
     }
 }

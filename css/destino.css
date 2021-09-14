@@ -1,20 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-@media (max-width: 600px) {
-  .img1 {
-    display: none; }
-  .img2 {
-    display: none; }
-  .texto1 {
-    padding-top: 10px;
-    text-align: center; }
-  .texto2 {
-    padding-top: 10px;
-    text-align: center; }
-  .fondo {
-    display: none; }
-  .principal {
-    display: none; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +14,16 @@ a {
 body {
   background-color: ghostwhite; }
 
-.nav-link {
+.barra {
+  padding-top: 30px; }
+
+.navbar-light .navbar-nav .nav-link {
   color: #e85d04;
+  padding: 0px 20px;
   font-size: 1.3rem; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #dc2f02; }
 
 .imagenMenu {
   height: 100vh;
@@ -63,7 +54,8 @@ body {
   width: 100%; }
 
 .logoHeader {
-  width: 100px; }
+  width: 130px;
+  margin-top: -40px; }
 
 .contenedorIconos {
   width: 100%;
@@ -74,8 +66,14 @@ body {
   margin-top: 0px;
   margin-right: 50px; }
 
+.iconosContenido a i {
+  color: rgba(255, 255, 255, 0.5); }
+
+.iconosContenido a i:hover {
+  color: white; }
+
 .animate__animated .animate__bounce {
-  --animate-delay: 0.9s; }
+  --animate-delay: 1.0s; }
 
 .iconos {
   color: white;
@@ -93,13 +91,17 @@ body {
   text-shadow: 2px 2px 2px black; }
 
 .botonPrimario {
+  color: white;
   font-weight: 700;
   padding: 20px 150px;
   text-align: center;
   margin-left: 30%;
-  margin-top: 27%;
+  margin-top: 30%;
   background-image: linear-gradient(60deg, #e85d04, #dc2f02);
   border-radius: 33px 0px 33px 0px; }
+
+.botonPrimario :hover {
+  color: white; }
 
 .botonPrimario a {
   color: white; }
@@ -109,22 +111,6 @@ body {
 
 .logo {
   margin: 10px; }
-
-.section2 {
-  margin-top: 20px;
-  margin-left: 50px;
-  /* display: grid;
-    place-content: center;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: "foto1 texto1"; */ }
-
-.section3 {
-  margin-top: 0%;
-  margin-left: 50px;
-  /*   display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "texto2 foto2";
-    place-content: center; */ }
 
 .texto1 {
   word-wrap: break-word;
@@ -160,9 +146,6 @@ body {
   width: 150px;
   height: 150px; }
 
-.item {
-  padding: 0px 30px; }
-
 /* BUCLE EN SASS */
 h1 {
   font: 2em; }
@@ -178,3 +161,25 @@ h4 {
 
 h5 {
   font: 0.4em; }
+
+@media (max-width: 600px) {
+  .img1 {
+    display: none; }
+  .img2 {
+    display: none; }
+  .texto1 {
+    word-wrap: break-word;
+    padding-top: 0px;
+    margin-left: 0px; }
+  .texto2 {
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px; }
+  .item-logo {
+    display: none; }
+  .fondo {
+    display: none; }
+  .principal {
+    display: none; } }
