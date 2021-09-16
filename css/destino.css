@@ -6,7 +6,8 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: 'Kumbh Sans', sans-serif; }
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.3rem; }
 
 a {
   text-decoration: none; }
@@ -17,19 +18,21 @@ body {
 .barra {
   padding-top: 30px; }
 
+.header {
+  background: url(../img/header.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-left: 50vh; }
+
+.header .navbar {
+  background-color: transparent !important; }
+
 .navbar-light .navbar-nav .nav-link {
-  color: #e85d04;
-  padding: 0px 20px;
-  font-size: 1.3rem; }
+  color: #e85d04 !important;
+  font-weight: 700; }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #dc2f02; }
-
-.imagenMenu {
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  position: relative; }
+.navbar-light .navbar-toggler-icon {
+  color: white !important; }
 
 .fondo {
   height: 100%;
@@ -58,12 +61,13 @@ body {
   margin-top: -40px; }
 
 .contenedorIconos {
+  margin-top: -50px;
   width: 100%;
   display: flex;
   justify-content: flex-end; }
 
 .iconosContenido {
-  margin-top: 0px;
+  margin-top: -80px;
   margin-right: 50px; }
 
 .iconosContenido a i {
@@ -86,8 +90,7 @@ body {
   color: white;
   text-align: left;
   font-size: 3rem;
-  margin-left: 50%;
-  margin-top: 20%;
+  margin: 30vh 0vh 0vh 30vh;
   text-shadow: 2px 2px 2px black; }
 
 .botonPrimario {
@@ -95,18 +98,18 @@ body {
   font-weight: 700;
   padding: 20px 150px;
   text-align: center;
-  margin-left: 30%;
-  margin-top: 30%;
+  margin: 50vh 0vh 0vh 30vh;
   background-image: linear-gradient(60deg, #e85d04, #dc2f02);
   border-radius: 33px 0px 33px 0px; }
 
-.botonPrimario :hover {
-  color: white; }
+.botonPrimario:hover {
+  color: white;
+  background-image: linear-gradient(80deg, #e85d04, #dc2f02); }
 
 .botonPrimario a {
   color: white; }
 
-.botonPrimario :hover {
+.botonPrimario:hover {
   color: black; }
 
 .logo {
@@ -181,5 +184,27 @@ h5 {
     display: none; }
   .fondo {
     display: none; }
-  .principal {
-    display: none; } }
+  .header {
+    background: url(../img/header.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-left: 0vh; }
+  .iconosContenido {
+    margin-top: -20px;
+    margin-right: 0px; }
+  .textoPrincipal {
+    font-weight: 700;
+    position: absolute;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 15vh 0vh 0vh 0vh;
+    text-shadow: 2px 2px 2px black; }
+  .botonPrimario {
+    color: white;
+    font-weight: 700;
+    padding: 20px 40px;
+    text-align: center;
+    margin: 25vh 0vh 0vh 00vh;
+    background-image: linear-gradient(60deg, #e85d04, #dc2f02);
+    border-radius: 33px 0px 33px 0px; } }
