@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap);
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
@@ -7,7 +8,13 @@
   border: none;
   outline: none;
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 1.3rem; }
+  font-size: 1.2rem; }
+
+.text-dark {
+  color: #e85d04 !important; }
+
+.list-group-item {
+  border: none; }
 
 a {
   text-decoration: none; }
@@ -22,6 +29,10 @@ body {
   background: url(../img/header.jpg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
+  padding-left: 50vh; }
+
+.Head {
+  min-height: 30vh;
   padding-left: 50vh; }
 
 .header .navbar {
@@ -115,6 +126,9 @@ body {
 .logo {
   margin: 10px; }
 
+.logoMenu {
+  width: 180px; }
+
 .texto1 {
   word-wrap: break-word;
   width: 300px;
@@ -172,8 +186,10 @@ h5 {
     display: none; }
   .texto1 {
     word-wrap: break-word;
-    padding-top: 0px;
-    margin-left: 0px; }
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px; }
   .texto2 {
     word-wrap: break-word;
     text-align: center;
@@ -208,3 +224,54 @@ h5 {
     margin: 25vh 0vh 0vh 00vh;
     background-image: linear-gradient(60deg, #e85d04, #dc2f02);
     border-radius: 33px 0px 33px 0px; } }
+
+/* CONTACTO */
+.contenedorContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.tituloContacto {
+  color: #e85d04;
+  font-weight: 700; }
+
+.parrafoContacto {
+  color: gray;
+  font-size: 1.5rem;
+  letter-spacing: -.1rem;
+  text-transform: uppercase; }
+
+.formularioContacto {
+  padding: 20vh 0vh 20vh 0vh;
+  background-color: #e85d04;
+  color: white;
+  font-weight: 700; }
+
+.form-control {
+  /* background-color: $color-principal; */
+  border: none;
+  margin-top: 10px;
+  opacity: 0.3; }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+@media (max-width: 600px) {
+  .tituloContacto {
+    color: #e85d04;
+    font-weight: 700;
+    font-size: 1.1rem; }
+  .parrafoContacto {
+    word-wrap: break-word;
+    color: gray;
+    font-size: .9rem;
+    letter-spacing: 0rem; }
+  .logoMenu {
+    width: 50px; }
+  .Head {
+    min-height: 30vh;
+    padding-left: 0vh; } }
