@@ -275,3 +275,23 @@ h5 {
   .Head {
     min-height: 30vh;
     padding-left: 0vh; } }
+
+/* FORMULARIO DE INSCRIPCION */
+.dato {
+  border-bottom: 1px solid #e85d04;
+  background: none;
+  padding: 0 100px 0 0;
+  color: gray; }
+
+.formularioInscripcion {
+  display: flex;
+  justify-content: center; }
+
+.inputDato {
+  color: #e85d04;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 20px; }
+
+.inputDato__email {
+  padding-right: 50px; }
