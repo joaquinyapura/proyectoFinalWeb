@@ -295,3 +295,17 @@ h5 {
 
 .inputDato__email {
   padding-right: 50px; }
+
+@media (max-width: 600px) {
+  .inputDato {
+    color: #e85d04;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 0px; }
+  .inputDato__email {
+    padding-right: 0px; }
+  .dato {
+    border-bottom: 1px solid #e85d04;
+    background: none;
+    padding: 0 0px 0 0;
+    color: gray; } }
